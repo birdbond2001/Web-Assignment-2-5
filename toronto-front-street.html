@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>toronto-front-street</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYMMop4CqjtV7d5nB9OnQANJN7OaeGx3s&callback=initMap">
+    </script>
+    
+</head>
+<body class="body-sation">
+    <div class="page-sation page-margin">
+            <div>
+                    <nav>
+                        <div class="title">
+                        <p id="title-word-sation"><a href="index.html" id="title-bigword">SCADDABUSH</a></p>
+                        <p id="title-smallword">ITALIAN KITCHEN & BAR</p>
+                        </div>
+                        <ul >
+                                <li class="dropdown">MENUS
+                                        
+                                </li>
+                                <li class="dropdown">LOCATION
+                                    <ul class="dropdown-menus">
+                                        <li><a href="toronto-front-street.html">toronto-front-street</a></li>
+                                        <li>richmand hill</li>
+                                        <li>oakville</li> 
+                                    </ul>  
+                                </li>
+                                <li class="dropdown">BOOK A TABLE
+                                        <ul class="dropdown-menus">
+                                                <li>toronto-front-street</li>
+                                                <li>richmand hill</li>
+                                                <li>oakville</li> 
+                                        </ul>  
+                                </li>
+                                <li class="dropdown" >TAKEOUT/DELIVER
+                                        <ul class="dropdown-menus">
+                                                <li>toronto-front-street</li>
+                                                <li>richmand hill</li>
+                                                <li>oakville</li> 
+                                        </ul>  
+                                </li>
+                                <li class="dropdown">CATERING
+                                        <ul class="dropdown-menus">
+                                                <li>toronto-front-street</li>
+                                                <li>richmand hill</li>
+                                                <li>oakville</li> 
+                                        </ul>  
+                                </li>
+                                <li class="dropdown">GIFT CARDS        
+                                </li>
+                            </ul>
+                     </nav>       
+                </div>
+                <img src="src/bar.jpeg" alt="img" id="location-title-pic">
+                <div class="icon-bar">
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+                </div> 
+                <div class="location-title-sation">
+                        <p class="location-big-word">SCADDABUSH FRONT & SIMCOE</p>
+                        <a href="index.html" class="link">BOOK A TABLE</a>
+                        <a href="index.html" class="link">EVENT SPACES</a>
+                </div>
+                <div class="location-title-sation2">
+                        <p class="location-smallword">SCADDABUSH is Italian slang for “a little bit of everything”. And with our social sized </p>
+                        <p class="location-smallword">dishes (perfect for sharing) you can certainly try a little bit of everything. Our </p>
+                        <p class="location-smallword">kitchenstyle tables set the stage for classic Italian hospitality and authentic Italian </p>
+                        <p class="location-smallword">food. Friends and family alike feel at home in our spirited, unpretentious</p>
+                        <p class="location-smallword">atmosphere.</p>
+                </div>
+                <div class="our-location-sation">
+                        <div class="our-location">
+                                <p class="location-big-word">Our Location</p>
+                                <p>SCADDABUSH Front is located on the northwest corner of Front and Simcoe Streets. </p>
+                                <p>Our main doors are located on Front just west of Simcoe, but we also have a direct </p>
+                                <p>entrance in from Simcoe Place.</p>
+                                <br>
+                                <p>One block away from Union Station and just north of the Union-Pearson UP Express </p>
+                                <p>train, SCADDABUSH is steps away from the Metro Toronto Convention Centre, the </p>
+                                <p>Rogers Centre and just south of Toronto’s Theatre District on King Street – making it </p>
+                                <p>a social hub for sports fans, music and theatre aficionados, locals and commuters </p>
+                                <p>alike!</p>
+                        </div>
+                        <div class="at-this-location">
+                                <p class="location-big-word">At This Location</p>
+                                <p><b>General Manager:</b>Crystal Yeoman</p>
+                                <p><b>Kitchen Manager:</b>Michael Flor</p>
+                                <p><b>General Manager:</b>Crystal Yeoman</p>
+                                <p><b>Take Out:</b>Yes – phone in</p>
+                                <p><b>Patio:</b>Yes (seasonal)</p>
+                                <p><b>Dress Code:</b> Casual, smart casual</p>
+                                <p><b>Wheelchair Accessible:</b>Yes</p>
+                        </div>
+                        <div class="contact-information">
+                                <p class="location-big-word">Contact Information</p>
+                                <p>200 Front St. West,</p>
+                                <p>Toronto, Ontario</p>
+                                <p>M5V 3J1</p>
+                               
+                                <p id="number" >416-979-3665</p>
+                                
+                                <p>Sun-Wed: 11:30am – 12am</p>
+                                <p>Thu-Sat: 11:30am – 1am</p>
+                        </div>
+                </div>
+                <div id="map"></div>
+                <script>
+                        function initMap() {
+                                var uluru = {lat:43.645071, lng:-79.386103};
+                                var map = new google.maps.Map(
+                                        document.getElementById('map'), {zoom: 17, center: uluru});
+                                        var marker = new google.maps.Marker({position: uluru, map: map});
+                                        }
+
+                </script>
+                <div class="footer-pic">
+                        <img src="src/pizza.jpeg" alt="img" id="pizza-pic">
+                </div>
+                <div class="footer-location-sation" >
+                        <div class="location-footer-word">
+                                <p class="footer-big-word location-footer footer-margin">We’re a generous bunch — that’s why we donate a portion of </p>
+                                <p class="footer-big-word location-footer">every order of our Charity Bread to a local charity.</p>
+                                <p class="location-footer">Founded in 1972, the SickKids Foundation is the fundraising organization for The Hospital for Sick Children (SickKids) in Toronto. </p>
+                                <p class="location-footer">The hospital reports that it is one of the world’s top pediatric healthcare institutions and Canada’s leading centre dedicated to </p>
+                                <p class="location-footer">advancing children’s health through the integration of patient care, research and education.</p>
+                                
+                        </div>
+        
+                          <img src="src/kid.jpg" alt="img" id="footer-pic">
+                </div>
+                <div id="footer">
+                                <div class="footer-sation">
+                                    <p class="footer-word">feedback</p>
+                                    <p class="footer-word">careers</p>
+                                    <p class="footer-word-prive">privace</p>
+                                </div>
+                </div>     
+                
+                
+        </div> 
+
+    </div>
+    
+</body>
+</html>
