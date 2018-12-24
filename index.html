@@ -7,28 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 800px)" href="media.css" />
    
 </head>
 <body class="body-sation page-margin">
     <div class="page-sation">
         <div>
-            <nav>
+        <div class="togglearea">
+                <label for="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        
+                </label>
+        </div>
+           
+           <input type="checkbox" id="toggle">
+            <nav class="navbar">
                 <div class="title">
                 <p id="title-word-sation"><a href="index.html" id="title-bigword">SCADDABUSH</a></p>
                 <p id="title-smallword">ITALIAN KITCHEN & BAR</p>
                 </div>
+                
+                <div >
                 <ul >
                         <li class="dropdown">MENUS
                                 
                         </li>
                         <li class="dropdown">LOCATION
+                                        <i class="fa fa-caret-down"></i>
                             <ul class="dropdown-menus">
-                                <li><a href="toronto.css">toronto-front-street</a></li>
+                                <li><a href="toronto-front-street.html">toronto-front-street</a></li>
                                 <li>richmand hill</li>
                                 <li>oakville</li> 
                             </ul>  
                         </li>
                         <li class="dropdown">BOOK A TABLE
+                                        <i class="fa fa-caret-down"></i>
                                 <ul class="dropdown-menus">
                                         <li>toronto-front-street</li>
                                         <li>richmand hill</li>
@@ -36,6 +51,7 @@
                                 </ul>  
                         </li>
                         <li class="dropdown" >TAKEOUT/DELIVER
+                                        <i class="fa fa-caret-down"></i>
                                 <ul class="dropdown-menus">
                                         <li>toronto-front-street</li>
                                         <li>richmand hill</li>
@@ -43,6 +59,7 @@
                                 </ul>  
                         </li>
                         <li class="dropdown">CATERING
+                                        <i class="fa fa-caret-down"></i>
                                 <ul class="dropdown-menus">
                                         <li>toronto-front-street</li>
                                         <li>richmand hill</li>
@@ -52,6 +69,7 @@
                         <li class="dropdown">GIFT CARDS        
                         </li>
                     </ul>
+                </div>
              </nav>       
         </div>
         <img src="src/chicken.jpeg" alt="img" id="title-pic">
