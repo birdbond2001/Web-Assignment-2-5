@@ -8,7 +8,7 @@
 .page-sation
 {
     height: 1200px;
-    width:1438px;
+    width:1440px;
 }
 .page-margin
 {
@@ -24,7 +24,9 @@ nav{
     margin-right:35px;
     text-align: center;
     position:fixed;
-    width: 100%;
+    width: 1440px;
+    display:flex;
+    justify-content: flex-end;
 }
 .title
 {
@@ -39,6 +41,7 @@ nav{
     margin-bottom: 0px;
     margin-bottom: 0px;
     text-decoration: none;
+    margin-right: 100px;
 
 }
 #title-word-sation
@@ -50,6 +53,7 @@ nav{
     margin-top: 0px;
     font-weight: bold;
     text-align: right;
+    margin-right: 100px;
 }
 nav li{
    box-sizing: border-box;
@@ -179,14 +183,16 @@ nav li>a{
     padding-left: 5px;
     color: white;
     margin-top: 30px;
+    
+  }
+  #footer
+  {
+    background-color: #dd4b39;
+    height: 80px;
   }
   .footer-sation
   {
-      padding-left: 1150px;
-      background-color: #dd4b39;
-      height: 80px;
-      ;
-    
+     margin-left: 1200px;
   }
   #location-title-pic
   {
@@ -296,3 +302,189 @@ nav li>a{
       width: 1440px;
       height: 300px;
   }
+  #toggle{
+      display: none;
+  }
+  .togglearea{
+      background-color: beige;
+      border-bottom: 2px solid white;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: flex-end;
+  }
+  .togglearea label{
+      background-color: white;
+      height: 45px;
+      width: 45px;
+      color: black;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+  }
+  .togglearea label span{
+    background-color: black;
+    height: 3px;
+    width: 70%;
+    margin: 2px 0px ;
+  }
+  .togglearea
+  {
+      display: none;
+  }
+  @media screen and (min-width: 890px) and (max-width:1000px)
+    {
+        .page-sation
+{
+    width:900px;
+}
+        .navbar{
+            flex-direction: column;
+            display: none;
+            width: 100%;
+        }
+        #toggle:checked + .navbar
+        {
+            display: flex;
+        }
+        .togglearea{
+            display: flex;
+        }
+        #title-pic{
+            width: 100%;
+            height: 500px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 40% ;
+            margin-left: 40px;
+          }
+        .pic{
+            width: 100%;
+            height:100%;
+        }
+        #pic8
+        {
+            width: 500px;
+        }
+        
+        
+        #footer
+        {
+            width: 100%;
+
+        }
+        .footer-sation
+        {
+            margin-left: 600px;
+        }
+    }
+    @media screen and (max-width:850px)
+    {
+        .page-sation
+{
+    width:100%;
+}
+        .navbar{
+            flex-direction: column;
+            display: none;
+            width: 100%;
+        }
+        #toggle:checked + .navbar
+        {
+            display: flex;
+        }
+        .togglearea{
+            display: flex;
+        }
+        #title-pic{
+            width: 100%;
+            height: 500px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 30% ;
+            margin-left:auto;
+            margin-right: auto;
+            
+            
+          }
+        .pic{
+            width: 100%;
+            height:100%;
+        }
+        #pic8{
+            width: 500px;
+           
+        }
+        
+        #footer
+        {
+            width: 100%;
+
+        }
+        .footer-sation
+        {
+            margin-left: 500px;
+        }
+    }
+    @media screen and (min-width: 400px) and (max-width: 750px)
+    {
+        .page-sation
+{
+    width:100%;
+    height: 100%;
+}
+        .navbar{
+            flex-direction: column;
+            display: none;
+            width: 100%;
+        }
+        #toggle:checked + .navbar
+        {
+            display: flex;
+        }
+        .togglearea{
+            display: flex;
+        }
+        #title-pic{
+            width: 100%;
+            height: 300px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto ;
+            
+            
+          }
+        .pic{
+            width: 100%;
+            height:100%;
+        }
+        #pic8{
+            width: 100%;
+            height: 100%;
+        }
+        
+        #footer
+        {
+            width: 100%;
+
+        }
+        .footer-sation
+        {
+            margin-left: 200px;
+        }
+    }
+
+
+
+    
+    
