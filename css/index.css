@@ -7,8 +7,9 @@
 }
 .page-sation
 {
-    height: 1200px;
+    
     width:1440px;
+    text-align: center;
 }
 .page-margin
 {
@@ -21,10 +22,10 @@ nav{
     color: rgb(107, 103, 103);
     font-size: 18px;
     font-weight: bold;
-    margin-right:35px;
+    margin-right:150px;
     text-align: center;
     position:fixed;
-    width: 100%;
+    width: 1440px;
     display:flex;
     justify-content: flex-end;
 }
@@ -385,7 +386,7 @@ nav li>a{
         }
         #title-pic{
             width: 100%;
-            height: 500px;
+           
         }
         
         .grid-container {
@@ -447,12 +448,12 @@ nav li>a{
             background-color: #dd4b39;
         }
     }
-    @media screen and (max-width:750px)
+    @media screen and (max-width:760px)
     {
         .page-sation
-{
-    width:100%;
-}
+        {
+            width:100%;
+        }
         .navbar{
             flex-direction: column;
             display: none;
@@ -467,7 +468,7 @@ nav li>a{
         }
         #title-pic{
             width: 100%;
-            height: 500px;
+            
         }
         
         .grid-container {
@@ -522,7 +523,7 @@ nav li>a{
         }
         .footer-sation
         {
-            margin-left: 600px;
+            margin-left: 350px;
         }
         
     
@@ -552,7 +553,7 @@ nav li>a{
         }
         #title-pic{
             width: 100%;
-            height: 300px;
+            
         }
         
         .grid-container {
@@ -608,7 +609,7 @@ nav li>a{
         }
         .footer-sation
         {
-            margin-left: 600px;
+            margin-left: 200px;
         }
         
     
