@@ -25,7 +25,7 @@ nav{
     margin-right:150px;
     text-align: center;
     position:fixed;
-    width: 1440px;
+    width:1440px ;
     display:flex;
     justify-content: flex-end;
 }
@@ -366,7 +366,22 @@ nav li>a{
   {
       display: none;
   }
-  @media screen and (max-width: 999px) 
+  @media screen and (max-width: 1400px) 
+  {
+    .navbar{
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+    #toggle:checked + .navbar
+    {
+        display: flex;
+    }
+    .togglearea{
+        display: flex;
+    }
+  }
+  @media screen and (max-width: 1024px) 
     {
         .page-sation
 {
