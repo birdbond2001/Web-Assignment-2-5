@@ -85,8 +85,9 @@ nav li>a{
 }
 #title-pic
 {
-    width: 1450px;
-    height: 900px;
+    max-width: 100%;
+    height: 100%;
+    display: block;
 }
 .icon-bar {
     position: fixed;
@@ -142,28 +143,56 @@ nav li>a{
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
-    margin-left: 150PX;
-    margin-right: 150px;
-    
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;    
   }
   .grid-item {
     
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
     text-align: center;
   }
+  .item1{
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+  .item2{
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+  .item3{
+    grid-column: 3 / 4;
+    grid-row: 1;
+  }
+  .item4{
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+  .item5{
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+  .item6{
+    grid-column: 3 / 4;
+    grid-row: 2;
+  }
+  .item7{
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
   .item8{
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
     grid-row: 3;
   }
   .pic
   {
       width: 300px;
-      height: 350px;;
+      height: 300px;
   }
   #pic8
   {
-      width: 600px;
+      width:auto;
       height: 350px;;
   }
   .footer-word
@@ -336,7 +365,7 @@ nav li>a{
   {
       display: none;
   }
-  @media screen and (min-width: 890px) and (max-width:1000px)
+  @media screen and (max-width: 999px) 
     {
         .page-sation
 {
@@ -361,8 +390,38 @@ nav li>a{
         
         .grid-container {
             display: grid;
-            grid-template-columns: 40% ;
-            margin-left: 40px;
+            grid-template-columns: 50% 50%;
+            grid-auto-rows: auto auto auto auto auto;
+           
+            max-width: 769px;
+          }
+          .item1{
+            grid-column: 1 / 2;
+            grid-row: 1;
+          }
+          .item2{
+            grid-column: 2 / 3;
+            grid-row: 1;
+          }
+          .item3{
+            grid-column: 1 / 2;
+            grid-row: 2;
+          }
+          .item4{
+            grid-column: 2 / 3;
+            grid-row: 2;
+          }
+          .item5{
+            grid-column: 1 / 2;
+            grid-row: 3;
+          }
+          .item6{
+            grid-column: 2 / 3;
+            grid-row: 3;
+          }
+          .item7{
+            grid-column: 1 / 2;
+            grid-row: 4;
           }
         .pic{
             width: 100%;
@@ -383,8 +442,12 @@ nav li>a{
         {
             margin-left: 600px;
         }
+        .pic-sation
+        {
+            background-color: #dd4b39;
+        }
     }
-    @media screen and (max-width:850px)
+    @media screen and (max-width:750px)
     {
         .page-sation
 {
@@ -409,20 +472,48 @@ nav li>a{
         
         .grid-container {
             display: grid;
-            grid-template-columns: 30% ;
-            margin-left:auto;
-            margin-right: auto;
-            
-            
+            grid-template-columns: 50% 50%;
+            grid-auto-rows: auto auto auto auto auto;
+           
+            max-width: 769px;
+          }
+          .item1{
+            grid-column: 1 / 2;
+            grid-row: 1;
+          }
+          .item2{
+            grid-column: 2 / 3;
+            grid-row: 1;
+          }
+          .item3{
+            grid-column: 1 / 2;
+            grid-row: 2;
+          }
+          .item4{
+            grid-column: 2 / 3;
+            grid-row: 2;
+          }
+          .item5{
+            grid-column: 1 / 2;
+            grid-row: 3;
+          }
+          .item6{
+            grid-column: 2 / 3;
+            grid-row: 3;
+          }
+          .item7{
+            grid-column: 1 / 2;
+            grid-row: 4;
           }
         .pic{
             width: 100%;
             height:100%;
         }
-        #pic8{
+        #pic8
+        {
             width: 500px;
-           
         }
+        
         
         #footer
         {
@@ -431,16 +522,22 @@ nav li>a{
         }
         .footer-sation
         {
-            margin-left: 500px;
+            margin-left: 600px;
+        }
+        
+    
+        .pic-sation
+        {
+            background-color: #181616;
         }
     }
-    @media screen and (min-width: 400px) and (max-width: 750px)
+    @media screen and (max-width: 450px)
     {
         .page-sation
-{
-    width:100%;
-    height: 100%;
-}
+        {
+            width:100%;
+            height: 100%;
+        }
         .navbar{
             flex-direction: column;
             display: none;
@@ -460,30 +557,65 @@ nav li>a{
         
         .grid-container {
             display: grid;
-            grid-template-columns: auto ;
-            
-            
+            grid-template-columns: 50% 50%;
+            grid-auto-rows: auto auto auto auto auto;
+           
+            max-width: 769px;
+          }
+          .item1{
+            grid-column: 1 / 4;
+            grid-row: 1;
+          }
+          .item2{
+            grid-column: 1 / 4;
+            grid-row: 2;
+          }
+          .item3{
+            grid-column: 1 / 4;
+            grid-row: 3;
+          }
+          .item4{
+            grid-column: 1 / 4;
+            grid-row: 4;
+          }
+          .item5{
+            grid-column: 1 / 4;
+            grid-row: 5;
+          }
+          .item6{
+            grid-column: 1 / 4;
+            grid-row: 6;
+          }
+          .item7{
+            grid-column: 1 / 4;
+            grid-row: 7;
           }
         .pic{
             width: 100%;
             height:100%;
         }
-        #pic8{
-            width: 100%;
-            height: 100%;
+        #pic8
+        {
+            width: 500px;
         }
+        
         
         #footer
         {
             width: 100%;
+            height: 190px;
 
         }
         .footer-sation
         {
-            margin-left: 200px;
+            margin-left: 600px;
         }
-    }
-
+        
+    
+        .pic-sation
+        {
+            background-color: #dd4b39;
+        }
 
 
     
