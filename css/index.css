@@ -8,7 +8,7 @@
 .page-sation
 {
     
-    width:1440px;
+    max-width:1500px;
     text-align: center;
 }
 .page-margin
@@ -25,9 +25,9 @@ nav{
     margin-right:150px;
     text-align: center;
     position:fixed;
-    width:1440px ;
+    width:1500px ;
     display:flex;
-    justify-content: flex-end;
+    
 }
 .title
 {
@@ -43,6 +43,7 @@ nav{
     margin-bottom: 0px;
     text-decoration: none;
     margin-right: 100px;
+    margin-left: 50px;
 
 }
 #title-word-sation
@@ -366,7 +367,7 @@ nav li>a{
   {
       display: none;
   }
-  @media screen and (max-width: 1400px) 
+  @media screen and (max-width: 1380px) 
   {
     .navbar{
         flex-direction: column;
@@ -467,7 +468,7 @@ nav li>a{
     {
         .page-sation
         {
-            width:100%;
+         width:100%;
         }
         .navbar{
             flex-direction: column;
