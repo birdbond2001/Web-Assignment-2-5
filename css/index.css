@@ -382,12 +382,13 @@ nav li>a{
         display: flex;
     }
   }
+  
   @media screen and (max-width: 1024px) 
     {
         .page-sation
-{
-    width:900px;
-}
+    {
+        width:100%;
+    }
         .navbar{
             flex-direction: column;
             display: none;
