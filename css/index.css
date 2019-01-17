@@ -369,6 +369,10 @@ nav li>a{
   }
   @media screen and (max-width: 1380px) 
   {
+    .page-sation
+    {
+        width:100%;
+    }
     .navbar{
         flex-direction: column;
         display: none;
